@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Currency Converter</h1>
+    
+    <div class="container">
+        <small>*Note: Currency values are as on 16-06-2021</small>
+        <div class="from">
+            <input type="number" name="amount" id="amount" placeholder="From" onchange="convert();" oninput="convert();">
+            <select id="selectCurrencyIn" onchange="convert();">
+                <option value="">Choose a option</option>
+                <option id="inr" value="inr">Indian Rupee (₹)</option>
+                <option id="usd" value="usd">United States Dollar ($)</option>
+                <option id="aud" value="aud">Australian Dollar (AU$)</option>
+            </select>
+        </div>
+        <div class="to">
+            <input type="text" id="fromOutput" placeholder="To">
+            <select id="selectCurrencyOut" onchange="convert();">
+                <option value="">Choose a option</option>
+                <option id="inr" value="inr">Indian Rupee (₹)</option>
+                <option id="usd" value="usd">United States Dollar ($)</option>
+                <option id="aud" value="aud">Australian Dollar (AU$)</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
